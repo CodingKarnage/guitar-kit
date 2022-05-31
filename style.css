@@ -1,0 +1,97 @@
+@font-face {
+    font-family: myFont;
+    src: url(./fonts/CarterOne-Regular.ttf);
+  }
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: myFont;
+    /* overflow: hidden; */
+}
+
+body {
+    background-image: url("./images/guitar.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.site{
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    letter-spacing: 3px;
+    gap: 100px;
+}
+
+.container {
+    flex: 1;
+}
+
+.logo {
+    text-align: center;
+    font-size: 68px;
+    background: -webkit-linear-gradient(#FFFF00, #fff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+.notes {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    font-size: 52px;
+    font-weight: bold;
+    align-self: center;
+}
+
+.note {
+    overflow: visible;
+    height: 500px;
+    width: 10px;
+    border-radius: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: all .07s ease;
+    color: #fff;
+}
+
+.playing {
+    transform: scale(1.5) skew(-.5deg, 10deg);
+    color: #FFFF00;
+    background-color: rgba(0, 0, 0, 0.801);
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    margin:15px;
+    font-size: 13px;
+    color: #FFFF00;
+    background-color: rgba(0, 0, 0, 0.25);
+    padding: 15px;
+    border-radius: 25px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    color: #FFF;
+}
